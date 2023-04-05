@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <h1>Operaciones con Calculadora</h1>
+      <br>
+      <form id="forma">
+        <div class="mb-3">
+          <label for="operandoA">Operando 1:</label>
+          <input type="number" class="form-control" placeholder="Ingrese el operando 1:" id="operandoA" min="0">
+        </div>
+        <div class="mb-3">
+          <label for="operandoB">Operando 2:</label>
+          <input type="number" class="form-control" placeholder="Ingrese el operando 2:" id="operandoB" min="0">
+        </div>
+      </form>
+      <br>
+      <button class="btn btn-primary mb-3" onclick="sumar()" >Sumar</button>
+      <div id="resultado"></div>
+      <button class="btn btn-primary mb-3" onclick="resta()" >Resta</button>
+      <div id="resultado_resta"></div>
+      <button class="btn btn-primary mb-3" onclick="mult()" >Multiplicación</button>
+      <div id="resultado_m"></div>
+      <button class="btn btn-primary mb-3" onclick="division()" >División</button>
+      <div id="resultado_d"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>
